@@ -1,0 +1,64 @@
+<html lang="en" class="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yola - Make a Free Website</title>
+        <!-- <link rel="stylesheet" href="./bootstrap.css"> -->
+        <link rel="stylesheet" href="./yola.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script>
+            function minifyNav() {
+                var x = document.getElementsByClassName("left-nav")[0];
+                if (x.className === "left-nav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "left-nav";
+                }
+
+                x = document.getElementsByClassName("right-nav")[0];
+                if (x.className === "right-nav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "right-nav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="home-header">
+            <div class="container">
+                <nav class="home-nav">
+                    <ul class="left-nav">
+                        <li class="logo"><a href="/">Yola</a></li>
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/templates/" data-track-link="Template Gallery Navigation" data-track-label="Top Navigation Template Gallery Click">Gallery</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="https://www.yola.com/blog/">Blog</a></li>
+                        <li class="icon">
+                            <a href="javascript:void(0);" onclick="minifyNav()">&#9776;</a>
+                        </li>
+                    </ul>
+                    <ul class="right-nav">
+                        <li>
+                            <div class="drop-down">
+                                <div class="hover-button">English</div>
+                                <ul class="hover-list languages-selector">
+                                    <li><a href="https://www.yola.com/fr">Français</a></li>
+                                    <li class="selected"><a href="https://www.yola.com">English</a></li>
+                                    <li><a href="https://www.yola.com/de">Deutsch</a></li>
+                                    <li><a href="https://www.yola.com/it">Italiano</a></li>
+                                    <li><a href="https://www.yola.com/pt_BR">Português (Brasil)</a></li>
+                                    <li><a href="https://www.yola.com/es">Español</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="support"><a href="/support">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>

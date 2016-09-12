@@ -1,0 +1,125 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    color: #cad4dd;
+    margin: 0;
+    background: linear-gradient(160deg, #375d81 0, #4873a8 51%, #39b8c6 100%);
+    min-height: 800px;
+}
+
+header .logo a {
+    display: inline-block;
+    margin-left: 16px;
+    height: 68px;
+    width: 68px;
+    text-indent: -5120px;
+    background: transparent url('./yola-logo.png') no-repeat 0 0;
+}
+
+.home-nav {
+    margin: 2.5em 2em 1em 2em;
+}
+
+.home-nav li:not(.logo) {
+    margin-top: 10px;
+}
+
+.home-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    display: inline;
+}
+
+.home-nav li.icon {
+    display: none;
+}
+
+.home-nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #cad4dd;
+}
+
+.home-nav a:hover, .hover-button:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left-nav li {
+    float: left;
+}
+
+.right-nav li {
+    float: right;
+}
+/* drop down for languages */
+.drop-down .hover-button {
+    display: inline-block;
+    /*text-align: center;*/
+    padding-left: 16px;
+    padding-top: 14px;
+    min-width: 130px;
+}
+
+.drop-down .hover-list {
+    display: none;
+    position: absolute;
+}
+
+.drop-down .hover-list li {
+    text-decoration: none;
+    text-align: left;
+    float: none;
+}
+
+.drop-down .hover-list li a {
+    padding: 0 0 0 16px;
+}
+
+.drop-down:hover .hover-list {
+    display: block;
+}
+
+@media screen and (max-width:836px) {
+    .home-nav ul {
+        display: block;
+    }
+    .home-nav ul li:not(.logo) {display: none;}
+    .home-nav ul li.icon {
+        float: right;
+        display: inline-block;
+    }
+    .drop-down .hover-button {
+        padding-left: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width:836px) {
+    .home-nav ul.responsive {position: relative;}
+    .home-nav ul.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .home-nav ul.responsive li {
+        float: none;
+        display: inline;
+    }
+    .home-nav ul.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    .drop-down .hover-button {
+        min-width: 0px;
+    }
+    .drop-down .hover-list li a {
+        margin-left: 80px;
+    }
+}
